@@ -1,0 +1,87 @@
+<!doctype html>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pressonagens</title>
+    <h1>Gerenciador de rpg</h1>
+    <nav>
+      <a href="index.html">Início</a> | <a href="login.html">Login</a> |
+      <a href="register.html">Cadastro</a> |
+      <a href="campaigns.html">Campanhas</a> |
+      <a href="characters.html">Personagens</a>
+      <a href="convidado.html">Covidado</a>
+    </nav>
+  </head>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+  </style>
+  <body>
+    <table style="width: 100%">
+      <tr>
+        <th>Nome</th>
+        <th>Descrição</th>
+        <th>Sistema</th>
+        <th>Campanha</th>
+        <th>Ações</th>
+      </tr>
+      <tr>
+        <td>Ícaro</td>
+        <td>
+          Um garoto arogante que saio de sua casa para poder viver liver a sua
+          vida e acabou a chando uma garota que virou seu mundo de cabeça para
+          baixo.
+        </td>
+        <td>Derivado de F&M</td>
+        <td>Soul earther</td>
+        <td>
+          <button type="button" onclick="">Editar</button>
+          <button type="button" onclick="">Excluir</button>
+        </td>
+      </tr>
+      <tr>
+        <td>Grimm</td>
+        <td>
+          Um garoto que sobrevivei a um desastre que firo o brasil de cabeça
+          para baixo, ele teve que sobreviver nessa tera sem lei e logo depois
+          de um tempo ele foi para a escola jujutsu no Japão para aprender sobre
+          essa energia.
+        </td>
+        <td>F&M 2.5</td>
+        <td>Grey word</td>
+        <td>
+          <button type="button" onclick="">Editar</button>
+          <button type="button" onclick="">Excluir</button>
+        </td>
+      </tr>
+    </table>
+
+    <h2>Criar ou editar personagem</h2>
+    <form id="character-form">
+      <label for="character-name">Nome do Personagem:</label>
+      <input type="text" id="character-name" name="character-name" required />
+
+      <label for="character-description">Descrição:</label>
+      <textarea
+        id="character-description"
+        name="character-description"
+        required
+      ></textarea>
+
+      <label for="character-system">Sistema:</label>
+      <input
+        type="text"
+        id="character-system"
+        name="character-system"
+        required
+      />
+
+      <button type="submit">Salvar</button>
+    </form>
+  </body>
+</html>

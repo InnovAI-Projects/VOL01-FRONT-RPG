@@ -1,0 +1,10 @@
+main {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+body {
+  margin: 0;
+  display: flex;
+  background-color: #c7a5a57e;
+}

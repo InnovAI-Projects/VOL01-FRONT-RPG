@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campanhas</title>
+    <h1>Gerenciador de rpg</h1>
+    <nav>
+      <a href="index.html">Início</a> | <a href="login.html">Login</a> |
+      <a href="register.html">Cadastro</a> |
+      <a href="campaigns.html">Campanhas</a> |
+      <a href="characters.html">Personagens</a>
+      <a href="convidado.html">Covidado</a>
+    </nav>
+  </head>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+  </style>
+  <body>
+    <table style="width: 100%">
+      <tr>
+        <th>Nome da Campanha</th>
+        <th>Descrição</th>
+        <th>Sistema</th>
+        <th>Ações</th>
+      </tr>
+      <tr>
+        <td>Cascata</td>
+        <td>
+          Um isekai onde todos do planeta foram para um novo mundo mas como
+          recens nacidos.
+        </td>
+        <td>Derivado de HxH 5e com modificações do mestre</td>
+        <td>
+          <button type="button" onclick="">Editar</button>
+          <button type="button" onclick="">Excluir</button>
+        </td>
+      </tr>
+      <tr>
+        <td>3 lados de um triângulo</td>
+        <td>
+          Um rpg de jujutsu, sendo que nesse mundo a energia amaldiçoada está
+          por todo o canto por conta de um acontecimento a 3 anos.
+        </td>
+        <td>F&M</td>
+        <td>
+          <button type="button" onclick="">Editar</button>
+          <button type="button" onclick="">Excluir</button>
+        </td>
+      </tr>
+    </table>
+
+    <h2>Criar ou editar campanha</h2>
+    <form id="campaign-form">
+      <label for="campaign-name">Nome da Campanha:</label>
+      <input type="text" id="campaign-name" name="campaign-name" required />
+
+      <label for="campaign-description">Descrição:</label>
+      <textarea
+        id="campaign-description"
+        name="campaign-description"
+        required
+      ></textarea>
+
+      <label for="campaign-system">Sistema:</label>
+      <input type="text" id="campaign-system" name="campaign-system" required />
+
+      <button type="submit">Salvar</button>
+    </form>
+  </body>
+</html>
