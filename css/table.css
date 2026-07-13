@@ -1,0 +1,35 @@
+table,
+th,
+td {
+  border: 1px solid black;
+}
+table {
+  width: 100%;
+}
+thead {
+  background-color: #333333;
+  color: #6ec459;
+}
+tbody tr:nth-child(even) {
+  background-color: var(--surface);
+}
+.actions {
+  display: flex;
+  gap: 6px;
+}
+.btn-editar {
+  background-color: var(--highlight);
+  border-radius: 5px;
+  color: var(--background);
+  border: none;
+  padding: 5px 7px;
+  cursor: pointer;
+}
+.btn-excluir {
+  background-color: var(--danger);
+  border-radius: 5px;
+  color: var(--background);
+  border: none;
+  padding: 5px 7px;
+  cursor: pointer;
+}

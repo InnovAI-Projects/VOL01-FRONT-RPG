@@ -1,0 +1,6 @@
+@import url("colors.css");
+
+footer {
+  padding: 10px;
+  color: var(--text-secondary);
+}

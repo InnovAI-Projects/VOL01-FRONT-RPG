@@ -3,24 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/convidado.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <title>Covidado</title>
-    <h1>Gerenciador de rpg</h1>
-    <nav>
-      <a href="index.html">Início</a> | <a href="login.html">Login</a> |
-      <a href="register.html">Cadastro</a> |
-      <a href="campaigns.html">Campanhas</a> |
-      <a href="characters.html">Personagens</a>
-      <a href="convidado.html">Covidado</a>
-    </nav>
   </head>
   <body>
-    <div class="login-container">
-      <h1>Covidado</h1>
-      <form id="login-form">
-        <label for="username">Usuário:</label>
-        <input type="text" id="username" name="username" required />
-        <button type="submit">Entrar</button>
-      </form>
-    </div>
+    <nav id="menu">
+      <a href="./index.html">Início</a>
+      <a href="./characters.html">Personagens</a>
+      <a href="./campaigns.html">Campanhas</a>
+      <a href="./login.html">Login</a>
+      <a href="./convidado.html">Convidado</a>
+      <a href="./register.html">Cadastro</a>
+    </nav>
+    <main>
+      <div class="Guest-container">
+        <h1>Convidado</h1>
+        <form id="Guest-form">
+          <label for="username">Usuário:</label>
+          <input type="text" id="username" name="username" required />
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>Gerenciador de RPG.</p>
+    </footer>
   </body>
 </html>

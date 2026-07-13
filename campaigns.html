@@ -3,73 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/campaigns.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="./css/table.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <title>Campanhas</title>
-    <h1>Gerenciador de rpg</h1>
-    <nav>
-      <a href="index.html">Início</a> | <a href="login.html">Login</a> |
-      <a href="register.html">Cadastro</a> |
-      <a href="campaigns.html">Campanhas</a> |
-      <a href="characters.html">Personagens</a>
-      <a href="convidado.html">Covidado</a>
-    </nav>
   </head>
-  <style>
-    table,
-    th,
-    td {
-      border: 1px solid black;
-    }
-  </style>
   <body>
-    <table style="width: 100%">
-      <tr>
-        <th>Nome da Campanha</th>
-        <th>Descrição</th>
-        <th>Sistema</th>
-        <th>Ações</th>
-      </tr>
-      <tr>
-        <td>Cascata</td>
-        <td>
-          Um isekai onde todos do planeta foram para um novo mundo mas como
-          recens nacidos.
-        </td>
-        <td>Derivado de HxH 5e com modificações do mestre</td>
-        <td>
-          <button type="button" onclick="">Editar</button>
-          <button type="button" onclick="">Excluir</button>
-        </td>
-      </tr>
-      <tr>
-        <td>3 lados de um triângulo</td>
-        <td>
-          Um rpg de jujutsu, sendo que nesse mundo a energia amaldiçoada está
-          por todo o canto por conta de um acontecimento a 3 anos.
-        </td>
-        <td>F&M</td>
-        <td>
-          <button type="button" onclick="">Editar</button>
-          <button type="button" onclick="">Excluir</button>
-        </td>
-      </tr>
-    </table>
+    <nav id="menu">
+      <a href="./index.html">Início</a>
+      <a href="./characters.html">Personagens</a>
+      <a href="./campaigns.html">Campanhas</a>
+      <a href="./login.html">Login</a>
+      <a href="./convidado.html">Convidado</a>
+      <a href="./register.html">Cadastro</a>
+    </nav>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome da Campanha</th>
+            <th>Descrição</th>
+            <th>Sistema</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cascata</td>
+            <td>
+              Um isekai onde todos do planeta foram para um novo mundo mas como
+              recens nacidos.
+            </td>
+            <td>Derivado de HxH 5e com modificações do mestre</td>
+            <td>
+              <div class="actions">
+                <button type="button" class="btn-editar" onclick="">
+                  Editar
+                </button>
+                <button type="button" class="btn-excluir" onclick="">
+                  Excluir
+                </button>
+            </td>
+          </tr>
+          <tr>
+            <td>3 lados de um triângulo</td>
+            <td>
+              Um rpg de jujutsu, sendo que nesse mundo a energia amaldiçoada
+              está por todo o canto por conta de um acontecimento a 3 anos.
+            </td>
+            <td>F&M</td>
+            <td>
+              <div class="actions">
+                <button type="button" class="btn-editar" onclick="">
+                  Editar
+                </button>
+                <button type="button" class="btn-excluir" onclick="">
+                  Excluir
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-    <h2>Criar ou editar campanha</h2>
-    <form id="campaign-form">
-      <label for="campaign-name">Nome da Campanha:</label>
-      <input type="text" id="campaign-name" name="campaign-name" required />
+      <div class="campaign-container">
+        <h2>Criar ou editar campanha</h2>
+        <form id="campaign-form">
+          <label for="campaign-name">Nome da Campanha:</label>
+          <input type="text" id="campaign-name" name="campaign-name" required />
 
-      <label for="campaign-description">Descrição:</label>
-      <textarea
-        id="campaign-description"
-        name="campaign-description"
-        required
-      ></textarea>
+          <label for="campaign-description">Descrição:</label>
+          <textarea
+            id="campaign-description"
+            name="campaign-description"
+            required
+          ></textarea>
 
-      <label for="campaign-system">Sistema:</label>
-      <input type="text" id="campaign-system" name="campaign-system" required />
+          <label for="campaign-system">Sistema:</label>
+          <input
+            type="text"
+            id="campaign-system"
+            name="campaign-system"
+            required
+          />
 
-      <button type="submit">Salvar</button>
-    </form>
+          <button type="submit">Salvar</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>Gerenciador de RPG.</p>
+    </footer>
   </body>
 </html>

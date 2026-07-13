@@ -3,31 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/register.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <title>Cadastro</title>
-    <h1>Gerenciador de rpg</h1>
-    <nav>
-      <a href="index.html">Início</a> | <a href="login.html">Login</a> |
-      <a href="register.html">Cadastro</a> |
-      <a href="campaigns.html">Campanhas</a> |
-      <a href="characters.html">Personagens</a>
-      <a href="convidado.html">Covidado</a>
-    </nav>
   </head>
   <body>
-    <div class="register-container">
-      <h1>Cadastro</h1>
-      <form id="register-form">
-        <label for="username">Nome:</label>
-        <input type="text" id="username" name="username" required />
+    <nav id="menu">
+      <a href="./index.html">Início</a>
+      <a href="./characters.html">Personagens</a>
+      <a href="./campaigns.html">Campanhas</a>
+      <a href="./login.html">Login</a>
+      <a href="./convidado.html">Convidado</a>
+      <a href="./register.html">Cadastro</a>
+    </nav>
+    <main>
+      <div class="register-container">
+        <h1>Cadastro</h1>
+        <form id="register-form">
+          <label for="username">Nome:</label>
+          <input type="text" id="username" name="username" required />
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
 
-        <label for="password">Senha:</label>
-        <input type="password" id="password" name="password" required />
-
-        <button type="submit">Cadastrar</button>
-      </form>
-    </div>
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password" required />
+          <button type="submit">Cadastrar</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>Gerenciador de RPG.</p>
+    </footer>
   </body>
 </html>

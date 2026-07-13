@@ -1,0 +1,15 @@
+:root {
+  --primary: #3fc716;
+  --secondary: #333333;
+  --highlight: #6ec459;
+
+  --background: #ffffff;
+  --surface: #f2f2f2;
+
+  --text: #1e293b;
+  --text-secondary: #393d39;
+
+  --success: #4caf50;
+  --warning: #eab308;
+  --danger: #ef4444;
+}
