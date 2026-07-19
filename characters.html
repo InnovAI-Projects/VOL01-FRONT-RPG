@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/characters.css" />
+    <link rel="stylesheet" href="./css/CamPresona.css" />
     <link rel="stylesheet" href="./css/menu.css" />
     <link rel="stylesheet" href="./css/table.css" />
     <link rel="stylesheet" href="./css/footer.css" />
@@ -73,32 +73,28 @@
         </tbody>
       </table>
 
-      <div class="character-container">
+      <div class="container">
         <h2>Criar ou editar personagem</h2>
-        <form id="character-form">
-          <label for="character-name">Nome do Personagem:</label>
+        <form id="form">
+          <label for="name">Nome do Personagem:</label>
           <input
             type="text"
-            id="character-name"
-            name="character-name"
-            required
+            id="name"
+            name="name"
           />
-
-          <label for="character-description">Descrição:</label>
+          <label for="description">Descrição:</label>
           <textarea
-            id="character-description"
-            name="character-description"
-            required
+            id="description"
+            name="description"
           ></textarea>
 
-          <label for="character-system">Sistema:</label>
+          <label for="system">Sistema:</label>
           <input
             type="text"
-            id="character-system"
-            name="character-system"
-            required
+            id="system"
+            name="system"
           />
-
+          <div id="feedback"></div>
           <button type="submit">Salvar</button>
         </form>
       </div>
@@ -106,5 +102,6 @@
     <footer>
       <p>Gerenciador de RPG.</p>
     </footer>
+    <script src="./js/fedback.js"></script>
   </body>
 </html>

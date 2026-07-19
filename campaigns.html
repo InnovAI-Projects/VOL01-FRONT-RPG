@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/campaigns.css" />
+    <link rel="stylesheet" href="./css/CamPresona.css" />
     <link rel="stylesheet" href="./css/menu.css" />
     <link rel="stylesheet" href="./css/table.css" />
     <link rel="stylesheet" href="./css/footer.css" />
@@ -67,27 +67,25 @@
         </tbody>
       </table>
 
-      <div class="campaign-container">
+      <div class="container">
         <h2>Criar ou editar campanha</h2>
-        <form id="campaign-form">
-          <label for="campaign-name">Nome da Campanha:</label>
-          <input type="text" id="campaign-name" name="campaign-name" required />
+        <form id="form">
+          <label for="name">Nome da Campanha:</label>
+          <input type="text" id="name" name="name"/>
 
-          <label for="campaign-description">Descrição:</label>
+          <label for="description">Descrição:</label>
           <textarea
-            id="campaign-description"
-            name="campaign-description"
-            required
+            id="description"
+            name="description"
           ></textarea>
 
-          <label for="campaign-system">Sistema:</label>
+          <label for="system">Sistema:</label>
           <input
             type="text"
-            id="campaign-system"
-            name="campaign-system"
-            required
+            id="system"
+            name="system"
           />
-
+          <div id="feedback"></div>
           <button type="submit">Salvar</button>
         </form>
       </div>
@@ -95,5 +93,6 @@
     <footer>
       <p>Gerenciador de RPG.</p>
     </footer>
+    <script src="./js/fedback.js"></script>
   </body>
 </html>
