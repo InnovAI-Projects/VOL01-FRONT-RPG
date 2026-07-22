@@ -4,15 +4,17 @@ const resultado = document.getElementById("Result");
 
 botao.addEventListener("click", function () {
   const valor = entrada.value.trim();
-  const formato = /^(\d{1,3})d(\d{1,3})(\+\d+)?$/;
+  const formato = /^(\d{1,3})d(\d{1,3})([+-]\d+)?$/;
   // = [^] Começa a linha ([\d] = 3 digitos que podem ir de 0 a 9)
   //[d] = D de dadomesmo ([\d] = 3 digitos que podem ir de 0 a 9))
   // A \ procura um + [\d+] = quer dizer que pode aceitar 1 ou mais numeros.
+  // [+-] = quer dizer que pode aceitar + ou -.
   // ? = Quer dizer que pode ter ou não.
   const partes = valor.match(formato);
 
   if (!partes) {
-    resultado.textContent = "Formato inválido. Use o formato XdY+Z.";
+    resultado.textContent =
+      "Formato inválido. Use o formato XdY+Z, todos os numeros tem, que ser positivos";
     return;
   }
 

@@ -28,63 +28,20 @@
             <th>Ações</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>Cascata</td>
-            <td>
-              Um isekai onde todos do planeta foram para um novo mundo mas como
-              recens nacidos.
-            </td>
-            <td>Derivado de HxH 5e com modificações do mestre</td>
-            <td>
-              <div class="actions">
-                <button type="button" class="btn-editar" onclick="">
-                  Editar
-                </button>
-                <button type="button" class="btn-excluir" onclick="">
-                  Excluir
-                </button>
-            </td>
-          </tr>
-          <tr>
-            <td>3 lados de um triângulo</td>
-            <td>
-              Um rpg de jujutsu, sendo que nesse mundo a energia amaldiçoada
-              está por todo o canto por conta de um acontecimento a 3 anos.
-            </td>
-            <td>F&M</td>
-            <td>
-              <div class="actions">
-                <button type="button" class="btn-editar" onclick="">
-                  Editar
-                </button>
-                <button type="button" class="btn-excluir" onclick="">
-                  Excluir
-                </button>
-              </div>
-            </td>
-          </tr>
-        </tbody>
+        <tbody id="campaignTable"></tbody>
       </table>
 
       <div class="container">
         <h2>Criar ou editar campanha</h2>
         <form id="form">
           <label for="name">Nome da Campanha:</label>
-          <input type="text" id="name" name="name"/>
+          <input type="text" id="name" name="name" />
 
           <label for="description">Descrição:</label>
-          <textarea
-            id="description"
-            name="description"
-          ></textarea>
+          <textarea id="description" name="description"></textarea>
 
           <label for="system">Sistema:</label>
-          <input
-            type="text"
-            id="system"
-            name="system"
-          />
+          <input type="text" id="system" name="system" />
           <div id="feedback"></div>
           <button type="submit">Salvar</button>
         </form>
@@ -93,6 +50,6 @@
     <footer>
       <p>Gerenciador de RPG.</p>
     </footer>
-    <script src="./js/fedback.js"></script>
+    <script src="./js/campanhas.js"></script>
   </body>
 </html>
